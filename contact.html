@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Upper Ace Logistics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Logo.png" alt="Upper Ace Logistics Logo">
+                <a href="index.html">Upper Ace Logistics</a>
+            </div>
+            <nav class="main-nav">
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:6048202731">Call Us: 604-820-2731</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h3>Get In Touch With Us</h3>
+                <p class="section-description">We'd love to hear from you. Fill out the form below or use our contact details to reach us.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h4>Contact Details</h4>
+                        <p><strong>Address:</strong><br>Unit 240-30475 Cardinal Ave<br>Abbotsford, BC, V2T 0E4</p>
+                        <p><strong>Phone:</strong> <a href="tel:6048202731">604-820-2731</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@upperacelogistics.com">info@upperacelogistics.com</a></p>
+                        <p><strong>Business Hours:</strong><br>Monday - Friday: 9:00 AM - 5:00 PM PST</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a>
+                            <a href="#" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h4>Send Us an Enquiry</h4>
+                        <form id="enquiryForm" class="contact-form" method="POST" action="/submit-enquiry">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone (Optional):</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div id="formMessage" style="margin-top: 20px; color: green; font-weight: bold;"></div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <h4>Our Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.7720977286395!2d-122.37890982361008!3d49.03080087140816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5484439169a94119%3A0x6b4c1070e30e66d!2s30475%20Cardinal%20Ave%2C%20Abbotsford%20V2T%200E4%2C%20Canada!5e0!3m2!1sen!2sca!4v1701548683515!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h4>Upper Ace Logistics</h4>
+                <p>We Carry Your Trust.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a>
+                    <a href="#" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Unit 240-30475 Cardinal Ave<br>Abbotsford, BC, V2T 0E4</p>
+                <p>Phone: <a href="tel:6048202731">604-820-2731</a></p>
+                <p>Email: <a href="mailto:info@upperacelogistics.com">info@upperacelogistics.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Upper Ace Logistics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic frontend validation and form submission handling (for demonstration)
+        document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formMessage = document.getElementById('formMessage');
+            formMessage.style.color = 'orange';
+            formMessage.innerText = 'Sending your message...';
+
+            // In a real application, you would send this data to your backend
+            // using fetch() or XMLHttpRequest
+            // Example:
+            // fetch('/submit-enquiry', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify({
+            //         name: document.getElementById('name').value,
+            //         email: document.getElementById('email').value,
+            //         phone: document.getElementById('phone').value,
+            //         subject: document.getElementById('subject').value,
+            //         message: document.getElementById('message').value
+            //     }),
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     if (data.success) {
+            //         formMessage.style.color = 'green';
+            //         formMessage.innerText = 'Message sent successfully! We will get back to you shortly.';
+            //         this.reset(); // Clear the form
+            //     } else {
+            //         formMessage.style.color = 'red';
+            //         formMessage.innerText = 'Failed to send message. Please try again.';
+            //     }
+            // })
+            // .catch((error) => {
+            //     console.error('Error:', error);
+            //     formMessage.style.color = 'red';
+            //     formMessage.innerText = 'An error occurred. Please try again later.';
+            // });
+
+            // For demonstration, simulate a successful submission after a delay
+            setTimeout(() => {
+                formMessage.style.color = 'green';
+                formMessage.innerText = 'Message sent successfully! We will get back to you shortly.';
+                this.reset(); // Clear the form
+            }, 2000); // Simulate network delay
+        });
+    </script>
+</body>
+</html>

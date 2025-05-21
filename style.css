@@ -1,0 +1,797 @@
+/* Basic Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0056b3; /* Primary brand color for links */
+}
+
+a:hover {
+    color: #003d7a;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed for your logo */
+    margin-right: 10px;
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #222;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+.header-contact a {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.header-contact a:hover {
+    background-color: #003d7a;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #003d7a;
+}
+
+.btn-secondary {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #ddd;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.about-brief, .services-overview, .why-choose-us {
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.about-brief p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+}
+
+/* Service Cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-cards .card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-cards .card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-cards .card h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.service-cards .card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Why Choose Us List */
+.why-choose-us ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: left;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-choose-us ul li {
+    font-size: 1.1em;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f0f5fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.why-choose-us ul li img {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #f8f8f8;
+    padding: 60px 0 20px 0;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-col h4 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #008cff; /* A slightly lighter blue for contrast */
+}
+
+.footer-col p {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col a {
+    color: #b0d8ff;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.social-links img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px 10px 15px;
+    }
+
+    .header-contact {
+        margin-top: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    section h3 {
+        font-size: 2em;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.5em;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .service-cards, .why-choose-us ul {
+        grid-template-columns: 1fr; /* Stack columns on very small screens */
+    }
+
+    nav ul li {
+        margin: 0 10px 10px 10px;
+    }
+}
+/* Add to your existing css/style.css file */
+
+/* Service Item Specifics (using content-block for layout) */
+.service-details .service-item {
+    margin-bottom: 80px; /* Spacing between each service block */
+}
+
+.service-details .service-item:last-child {
+    margin-bottom: 0; /* No margin after the last service block */
+}
+
+.service-details .service-item .text-content h3 {
+    color: #0056b3; /* Make service titles stand out */
+    font-size: 2em; /* Slightly smaller than main section titles */
+}
+
+.service-details .service-item .text-content p {
+    font-size: 1.05em;
+    margin-bottom: 25px;
+}
+
+.service-details .service-item .text-content ul {
+    list-style: disc; /* Use discs for list items */
+    margin-left: 25px; /* Indent the list */
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.service-details .service-item .text-content ul li {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.service-details .service-item .image-content img {
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Consistent shadow */
+}
+
+/* Why Our Services Section */
+.why-our-services {
+    background-color: #f0f5fa; /* Light blue background */
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.reason-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.reason-item img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.reason-item h4 {
+    font-size: 1.5em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.reason-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+/* Add to your existing css/style.css file */
+
+/* General Section Spacing & Backgrounds */
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+/* Page Hero (for internal pages) */
+.page-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/inner-hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.page-hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* About Intro */
+.about-intro p {
+    font-size: 1.15em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-intro p strong {
+    color: #0056b3;
+}
+
+/* Our Values Section */
+.our-values {
+    background-color: #f0f5fa; /* Light blue background */
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.value-item img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.value-item h4 {
+    font-size: 1.6em;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Team & Fleet/Tech Section (Content Blocks) */
+.content-block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px; /* Space between blocks */
+}
+
+.content-block:last-child {
+    margin-bottom: 0;
+}
+
+.content-block .text-content {
+    flex: 1;
+}
+
+.content-block .text-content h3 {
+    text-align: left; /* Override global text-align */
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.content-block .text-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.content-block .image-content {
+    flex: 1;
+    min-width: 300px; /* Ensure images don't get too small */
+}
+
+.content-block .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Specific alignments for content blocks */
+.content-block.left-align {
+    flex-direction: row;
+}
+
+.content-block.right-align {
+    flex-direction: row-reverse; /* Swap order for right alignment */
+}
+
+/* Safety & Compliance Section */
+.safety-compliance {
+    background-color: #f8f8f8;
+}
+
+.safety-compliance .safety-image {
+    max-width: 600px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Call to Action at Bottom */
+.cta-bottom {
+    padding: 60px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.cta-bottom h3 {
+    margin-bottom: 20px;
+}
+
+.cta-bottom p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Active navigation link styling */
+nav ul li a.active {
+    color: #0056b3; /* Primary brand color for the active link */
+    font-weight: 700;
+}
+
+
+/* Responsive Adjustments for About Us Page */
+@media (max-width: 992px) {
+    .content-block {
+        flex-direction: column; /* Stack content blocks vertically */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .content-block.left-align .text-content,
+    .content-block.right-align .text-content {
+        text-align: center; /* Center text when stacked */
+    }
+
+    .content-block.right-align .image-content {
+        order: -1; /* Keep image above text for consistency when stacked */
+    }
+
+    .content-block .image-content {
+        max-width: 80%; /* Constrain image width on smaller screens */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2.5em;
+    }
+    .page-hero p {
+        font-size: 1em;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .values-grid {
+        grid-template-columns: 1fr; /* Stack values on smaller screens */
+    }
+}
+
+/* Responsive Adjustments for Services Page */
+@media (max-width: 992px) {
+    .service-details .service-item {
+        flex-direction: column; /* Stack service content blocks vertically */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .service-details .service-item.left-align .text-content,
+    .service-details .service-item.right-align .text-content {
+        text-align: center; /* Center text when stacked */
+    }
+
+    .service-details .service-item.right-align .image-content {
+        order: -1; /* Keep image above text for consistency when stacked */
+    }
+
+    .service-details .service-item .text-content ul {
+        text-align: left; /* Keep list left-aligned even if surrounding text is centered */
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px; /* Constrain list width if centering */
+    }
+
+    .service-details .service-item .image-content {
+        max-width: 80%; /* Constrain image width on smaller screens */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .reasons-grid {
+        grid-template-columns: 1fr; /* Stack reasons on small screens */
+    }
+}
+/* --- Hamburger Menu & Mobile Nav Styles --- */
+
+/* Hide hamburger by default on desktop */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.hamburger-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333; /* Color of the bars */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Initial state of nav links for mobile - hidden */
+.main-nav .nav-links {
+    display: flex; /* Keep for desktop default */
+    flex-direction: row; /* Keep for desktop default */
+}
+
+
+/* Mobile Styles (adjust max-width if your header media query is different) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row; /* Keep logo and hamburger on one line */
+        justify-content: space-between; /* Space them out */
+        align-items: center;
+    }
+
+    nav {
+        order: 2; /* Put nav after logo */
+    }
+
+    .header-contact {
+        display: none; /* Hide phone number in header on mobile, can move to menu if desired */
+    }
+
+    /* Show hamburger menu on mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Hide nav links by default on mobile */
+    .main-nav .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px; /* Adjust based on your header height */
+        left: 0;
+        background-color: #fff; /* Menu background */
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 999; /* Below hamburger but above content */
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+    }
+
+    .main-nav .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .main-nav .nav-links li {
+        margin: 0; /* Remove horizontal margin */
+        padding: 10px 20px; /* Add vertical padding for touch targets */
+        text-align: center;
+    }
+
+    .main-nav .nav-links li a {
+        display: block; /* Make links full-width */
+        font-size: 1.1em;
+        padding: 8px 0;
+    }
+
+    .main-nav .nav-links li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Hamburger animation when active (optional but nice) */
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0; /* Middle bar fades out */
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
